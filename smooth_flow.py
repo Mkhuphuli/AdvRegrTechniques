@@ -20,7 +20,6 @@ def label_encode(data, cols):
     Lb_encoder = LabelEncoder()
     for col in cols:
         data[col] =  Lb_encoder.fit_transform(data[col])
-        
     return(data)
 
 def one_hot_encode(data,cols):
